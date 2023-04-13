@@ -100,10 +100,20 @@ v.2: background for 2nd canvas included changed to #0000FF, but no color change 
           /*  +++++++++++++++ BEGIN IMAGE PROCESSING +++++++++++++++ */
           /*  ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-          /* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
-          
-          
-          
+       var canvas2 = document.getElementById("otherCanvas") //commands 2nd canvas to know where edited image will be placed.
+       var context2 = canvas2.getContext("2d"); //code to get context defined by parameter of being 2-demensional property
+         
+       var imageData = context.getData(0, 0, 600, 500); //gets data form image for all pixels in first canvas as determined by given 
+       var data = imageDats.data; //container holding pixel data to returned
+         
+         
+        //color change in image code
+       for(var i = 0; i < data.length; i += 4){ // array responsible for looping pixel data of image, with starting position being 0. 
+        data[i] = 0; //red color profile of all pixles becomes 0. 
+        data[i+1] = 0; //green color profile of all pixels becomes 0. 
+        
+       }
+         context2.putImageDats(imageData, 0, 0);// all functions applied from 1st image to the 2nd.
           
         } // end of img.onload
         
