@@ -104,7 +104,7 @@ v.2: background for 2nd canvas included changed to #0000FF, but no color change 
        var canvas2 = document.getElementById("otherCanvas"); //commands 2nd canvas to know where edited image will be placed.
        var context2 = canvas2.getContext("2d"); //code to get context defined by parameter of being 2-demensional property
          
-       var imageData = context.geImagetData(0, 0, 600, 500); //gets data form image for all pixels in first canvas as determined by given 
+       var imageData = context.getImageData(0, 0, 600, 500); //gets data form image for all pixels in first canvas as determined by given 
        var data = imageData.data; //container holding pixel data to returned
          
          
