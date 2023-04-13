@@ -141,26 +141,21 @@ v.2: background for 2nd canvas included changed to #0000FF, but no color change 
         context.font = '20pt Calibri';
         context.fillStyle = "black";
         context.fillText("Original image will go here", 10, 20);
-      </script>
+      </script><!-- /header --> first canvas and formatting 
      
      
-       <h2>Push button to take picture.</h2>
-      <div>
-        Press orange button to create or choose image file:
-        <input type="file" id="fileInput" STYLE="background-color: #0000FF;">
-      </div>
-      <div id="messageDisplayArea"></div>
+   
      
      <canvas id="otherCanvas" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>
       <script> /* This script initiates the canvas and puts the text on the canvas "otherCanvas" */
-        var canvas = document.getElementById('otherCanvas');
-        var context = canvas.getContext("2d");
-        context.font = '20pt Calibri';
-        context.fillStyle = "blue";
-        context.fillText("Original image will go here", 10, 20);
-      </script>
+        var canvas2 = document.getElementById('otherCanvas');
+        var context2 = canvas.getContext("2d");
+        context2.font = '20pt Calibri';
+        context2.fillStyle = "blue";
+        context2.fillText("Original image will go here", 10, 20);
+      </script><!-- /header --> second canvas and formatting 
      
-
+     
     </div><!-- /content -->
     <div data-role="footer" data-position="fixed">
       <p>DIY Diagnostics</p>
